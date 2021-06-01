@@ -17,7 +17,7 @@ def EpoAuth():
     password = getpass.getpass(prompt='Password:', stream=None)
 
     #Authentication with McAfee EPO Api
-    EpoAuth.mc = mcafee.client("co03vepo","8443",username,password,output='json')
+    EpoAuth.mc = mcafee.client("<EPO_SERVER>","8443",username,password,output='json')
 
 
 def lookup():
