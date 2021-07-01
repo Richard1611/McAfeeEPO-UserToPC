@@ -4,7 +4,7 @@ import datetime
 import getpass
 
 def parseargs():
-    parser = argparse.ArgumentParser(description= 'Consulta en el API de EPO una lista de usuarios y devuelve la lista de workstations en las que estos se loguean. By: Richard Arias Genao ;)', usage='%(prog)s [-h] [-i] [-o]')
+    parser = argparse.ArgumentParser(description= 'Lookup on EPO API for all Computers hostnames in a file', usage='%(prog)s [-h] [-i] [-o]')
     parser.add_argument('-i', help='-i <input file (user file)>')
     parser.add_argument('-o', help='-o <output file (workstations file)>, if not exist, create a new one')
     parseargs.args = parser.parse_args()
